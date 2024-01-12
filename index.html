@@ -4,11 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kitchen Tool App</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-dark text-white">
+
+    <div class="container">
+        <form class="row g-3">
+            <h4 class="text-center">Add New Kitchen Tool Form</h4>
+            <div class="col-md-6">
+                <label for="newTool" class="form-label">Kitchen Tool Name</label>
+                <input id="newTool" class="form-control" placeholder="Enter name of tool here" />
+            </div>
+            <div class="col-md-6">
+                <label for="newQuantity" class="form-label">Quantity</label>
+                <input id="newQuantity" class="form-control" placeholder="Enter quantity here" />
+            </div><br>
+            <button id="submitTool" class="btn btn-info">Submit</button>
+        </form>
+        <br><br>
+        <form class="row g-3">
+            <h4 class="text-center">Update Kitchen Tool Form</h4>
+            <div class="mb-3">
+                <label for="updateId" class="form-label">Kitchen Tool ID</label>
+                <input id="updateId" class="form-control" />
+                <!-- </div>
+            <div> -->
+                <label for="updateTool" class="form-label">Kitchen Tool Name</label>
+                <input id="updateTool" class="form-control" />
+                <!-- </div>
+            <div> -->
+                <label for="updateQuantity" class="form-label">Tool Quantity</label>
+                <input id="updateQuantity" class="form-control">
+            </div><br>
+            <button id="updateKitchenTool" class="btn btn-info">Update</button>
+        </form>
+        <br><br>
+        <table class="table table-dark table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Kitchen Tool ID</th>
+                    <th>Kitchen Tool Name</th>
+                    <th>Tool Quantity</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+    </div>
 
 </body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
 
 </html>
